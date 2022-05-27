@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+body {
+  min-height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.todo-list-app {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  width: 250px;
+  height: 100vh;
+  border-right: 1px solid black;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+nav h1 {
+  margin-bottom: 15px;
+}
+
+nav li {
+  margin: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.task-list li {
+  margin-bottom: 10px;
+}
+
+header h2 {
+  margin-bottom: 10px;
+}
+
+.task-list {
+  margin-top: 10px;
+}
+
+.task-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+}
+
+.task-right {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  margin-left: 5px;
+  padding: 3px 5px;
+}
+
+input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+.testing {
+  color: red;
+}
+
+.importantOn {
+  color: red;
+}
+
+.importantOff {
+  color: black;
+}
+
+nav li:hover {
+  cursor: pointer;
+}
+
+.taskDone {
+  text-decoration: line-through;
+}
+
+.importantOn, .importantOff, .edit-task, .delete-task {
+  background: none;
+  border: 0;
+}
+
+.importantOn:hover, .importantOff:hover, .edit-task:hover, .delete-task:hover {
+  cursor: pointer;
+}
